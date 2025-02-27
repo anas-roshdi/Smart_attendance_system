@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserProfileController">
+   <children>
+      <ImageView fitHeight="81.0" fitWidth="125.0" layoutX="-475.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" x="500.0">
+         <image>
+            <Image url="@/Imgs/Logo.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="188.0" layoutY="34.0" orientation="VERTICAL" prefHeight="559.0" prefWidth="1.0" />
+      <Button fx:id="ProfileBt" layoutX="43.0" layoutY="251.0" mnemonicParsing="false" onAction="#SwitchToHomePage" onMouseEntered="#MouseEnter" onMouseExited="#MouseExited" prefHeight="25.0" prefWidth="106.0" text="Home" />
+      <Button fx:id="LogOutBt" layoutX="43.0" layoutY="310.0" mnemonicParsing="false" onAction="#SwitchToLogIn" onMouseEntered="#MouseEnter" onMouseExited="#MouseExited" prefHeight="25.0" prefWidth="106.0" text="Log Out">
+         <graphic>
+            <ImageView fitHeight="17.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Imgs\Logout.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ImageView fitHeight="70.0" fitWidth="96.0" layoutX="300.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/Imgs/pfp.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="nameLB" layoutX="468.0" layoutY="113.0" prefHeight="51.0" prefWidth="250.0" text="Label">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="335.0" layoutY="228.0" prefHeight="32.0" prefWidth="501.0" style="-fx-background-color: #3B389E; -fx-border-radius: 50px;">
+         <children>
+            <Label layoutX="43.0" layoutY="4.0" prefHeight="17.0" prefWidth="65.0" text="id : " textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label fx:id="idLB" layoutX="152.0" prefHeight="35.0" prefWidth="233.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Pane2" layoutX="335.0" layoutY="300.0" prefHeight="32.0" prefWidth="501.0" style="-fx-background-color: #3B389E;">
+         <children>
+            <Label layoutX="41.0" layoutY="4.0" prefHeight="17.0" prefWidth="65.0" text="email :" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label fx:id="emsilLB" layoutX="150.0" layoutY="-2.0" prefHeight="35.0" prefWidth="233.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Pane3" layoutX="335.0" layoutY="368.0" prefHeight="32.0" prefWidth="501.0" style="-fx-background-color: #3B389E;">
+         <children>
+            <Label layoutX="39.0" layoutY="4.0" prefHeight="17.0" prefWidth="65.0" text="phone" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label fx:id="phoneLB" layoutX="152.0" layoutY="5.0" prefHeight="25.0" prefWidth="233.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

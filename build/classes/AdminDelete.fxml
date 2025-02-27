@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminDeleteController">
+   <children>
+      <ImageView fitHeight="81.0" fitWidth="125.0" layoutX="1.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" x="25.0">
+         <image>
+            <Image url="@/Imgs/Logo.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="188.0" layoutY="34.0" orientation="VERTICAL" prefHeight="559.0" prefWidth="1.0" />
+      <Label layoutX="57.0" layoutY="108.0" prefHeight="17.0" prefWidth="78.0" text="Welcome, ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="ad_nameLB" layoutX="32.0" layoutY="133.0" prefHeight="59.0" prefWidth="131.0" text="#UserName" />
+      <Button fx:id="ProfileBt" layoutX="33.0" layoutY="225.0" mnemonicParsing="false" onAction="#SwitchToUserProfile" onMouseEntered="#MouseEnter" onMouseExited="#MouseExited" prefHeight="25.0" prefWidth="106.0" text="Profile">
+         <graphic>
+            <ImageView fitHeight="17.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/Imgs/pIcon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="LogOutBt" layoutX="33.0" layoutY="361.0" mnemonicParsing="false" onAction="#SwitchToLogIn" onMouseEntered="#MouseEnter" onMouseExited="#MouseExited" prefHeight="25.0" prefWidth="106.0" text="Log Out">
+         <graphic>
+            <ImageView fitHeight="17.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../SAS_1.1/SAS_1.1/src/Imgs/Logout.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Separator layoutX="27.0" layoutY="207.0" prefHeight="0.0" prefWidth="118.0" />
+      <Separator layoutX="188.0" layoutY="99.0" prefHeight="3.0" prefWidth="747.0" />
+      <ImageView fitHeight="33.0" fitWidth="44.0" layoutX="10.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/Imgs/pfp.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="229.0" layoutY="15.0" prefHeight="67.0" prefWidth="170.0" text="Delete">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="BackBt" layoutX="33.0" layoutY="288.0" mnemonicParsing="false" onAction="#SwitchToAdminHome" onMouseEntered="#MouseEnter" onMouseExited="#MouseExited" prefHeight="25.0" prefWidth="106.0" text="Back" />
+      <ChoiceBox fx:id="Cbox1" layoutX="217.0" layoutY="163.0" prefWidth="150.0" />
+      <AnchorPane fx:id="deletePane" layoutX="466.0" layoutY="133.0" prefHeight="456.0" prefWidth="376.0" visible="false">
+         <children>
+            <Label fx:id="Lb5" alignment="CENTER_RIGHT" layoutY="210.0" prefHeight="25.0" prefWidth="106.0" text="ID number:" />
+            <TextField fx:id="Tf5" disable="true" layoutX="120.0" layoutY="210.0" />
+            <TextField fx:id="Tf4" disable="true" layoutX="120.0" layoutY="170.0" />
+            <Label fx:id="Lb4" alignment="CENTER_RIGHT" layoutY="170.0" prefHeight="25.0" prefWidth="106.0" text="Phone number:" />
+            <TextField fx:id="Tf3" disable="true" layoutX="120.0" layoutY="90.0" />
+            <Label fx:id="Lb3" alignment="CENTER_RIGHT" layoutX="8.0" layoutY="90.0" prefHeight="25.0" prefWidth="106.0" text="Middle name:" />
+            <TextField fx:id="Tf2" disable="true" layoutX="120.0" layoutY="130.0" />
+            <Label fx:id="Lb2" alignment="CENTER_RIGHT" layoutY="130.0" prefHeight="25.0" prefWidth="106.0" text="Last name:" />
+            <TextField fx:id="Tf1" disable="true" layoutX="120.0" layoutY="50.0" />
+            <Label fx:id="Lb1" alignment="CENTER_RIGHT" layoutY="50.0" prefHeight="25.0" prefWidth="106.0" text="First name:" />
+            <TextField fx:id="Tf6" disable="true" layoutX="120.0" layoutY="250.0" />
+            <Label fx:id="Lb6" alignment="CENTER_RIGHT" layoutY="250.0" prefHeight="25.0" prefWidth="106.0" text="Email:" />
+            <TextField fx:id="Tf7" disable="true" layoutX="120.0" layoutY="290.0" />
+            <Label fx:id="Lb7" alignment="CENTER_RIGHT" layoutY="290.0" prefHeight="25.0" prefWidth="106.0" text="Password:" />
+            <Button fx:id="DeleteBt" layoutX="98.0" layoutY="347.0" mnemonicParsing="false" onAction="#deleteBtController" onMouseEntered="#MouseEnter" onMouseExited="#MouseExited" prefHeight="25.0" prefWidth="193.0" text="Delete" />
+            <Label fx:id="user_msg" layoutY="-7.0" prefHeight="43.0" prefWidth="369.0" text="Information of the Student">
+               <font>
+                  <Font name="Arabic Typesetting" size="31.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="user_msg2" layoutX="222.0" layoutY="117.0" prefHeight="33.0" prefWidth="150.0" text="Select student:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="Cbox2" layoutX="399.0" layoutY="163.0" prefWidth="150.0" visible="false" />
+      <Label fx:id="user_msg4" layoutX="410.0" layoutY="117.0" prefHeight="33.0" prefWidth="118.0" text="Select group:" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

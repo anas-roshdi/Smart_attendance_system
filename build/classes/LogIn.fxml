@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LogInController">
+   <children>
+      <Pane fx:id="RPane" layoutX="551.0" layoutY="8.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="584.0" prefWidth="596.0">
+         <children>
+            <TextField fx:id="nameField" layoutX="82.0" layoutY="196.0" prefHeight="25.0" prefWidth="250.0" promptText="Username" />
+            <Label layoutX="161.0" layoutY="62.0" prefHeight="53.0" prefWidth="112.0" text="Login">
+               <font>
+                  <Font size="36.0" />
+               </font></Label>
+            <Label layoutX="117.0" layoutY="117.0" prefHeight="17.0" prefWidth="187.0" text="Welcome! Please Enter your details" />
+            <Label fx:id="userMessage" layoutX="48.0" layoutY="154.0" prefHeight="17.0" prefWidth="307.0" stylesheets="@CssFile.css" />
+            <Separator layoutX="171.0" layoutY="318.0" prefHeight="0.0" prefWidth="83.0" />
+            <PasswordField fx:id="passField" layoutX="82.0" layoutY="248.0" prefHeight="25.0" prefWidth="250.0" promptText="Password" />
+            <Button fx:id="Loginbt" alignment="CENTER" contentDisplay="CENTER" layoutX="72.0" layoutY="347.0" mnemonicParsing="false" onAction="#Login" onMouseEntered="#BtEffectIn" onMouseExited="#BtEffectOut" prefHeight="25.0" prefWidth="275.0" text="Log In" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+         </children>
+      </Pane>
+      <ImageView fitHeight="166.0" fitWidth="200.0" layoutX="171.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Imgs/Logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

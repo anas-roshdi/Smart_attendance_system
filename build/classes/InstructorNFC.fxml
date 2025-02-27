@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InstructorNfcController">
+   <children>
+      <Label fx:id="nameLB" layoutX="63.0" layoutY="52.0" prefHeight="53.0" prefWidth="294.0" text="NFC Attendance">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="logTA" editable="false" layoutX="415.0" layoutY="45.0" prefHeight="510.0" prefWidth="451.0" />
+      <Button fx:id="BackBT" layoutX="167.0" layoutY="468.0" mnemonicParsing="false" onAction="#SwitchToInstructorAtt" prefHeight="25.0" prefWidth="130.0" text="Back" />
+      <Button fx:id="clearBT" layoutX="167.0" layoutY="421.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="clear log" />
+      <Label fx:id="nameLB1" layoutX="94.0" layoutY="105.0" prefHeight="25.0" prefWidth="232.0" text="make sure the NFC reader is plug in">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lecDateLB" layoutX="131.0" layoutY="292.0" prefHeight="51.0" prefWidth="157.0" text="?/?/????" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="courseNameLB" layoutX="122.0" layoutY="233.0" prefHeight="51.0" prefWidth="221.0" text="course name" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="groubNameLB" layoutX="122.0" layoutY="182.0" prefHeight="51.0" prefWidth="221.0" text="groub name" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

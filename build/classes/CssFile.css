@@ -1,0 +1,178 @@
+.root{
+    -fx-background-color: White;
+}
+.label{
+    -fx-alignment: center;    
+}
+
+.button{
+    -fx-background-color: rgb(59, 56, 158);
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-text-fill: white; 
+    
+    
+}
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: lightgray;
+    -fx-padding: 10;
+    -fx-table-cell-border-color: gray;
+    -fx-table-header-border-color: lightgray;
+}
+.table-view .column-header {
+    -fx-background-color: rgb(59, 56, 158);
+    -fx-border-color: gray;
+    -fx-border-width: 0 0 2px 0;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-text-fill: rgb(255, 255, 255);
+}
+.table-view .column-header .label {
+    -fx-text-fill: rgb(255, 255, 255); /* Text color for header labels */
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+.table-view:focused .table-row-cell:selected {
+    -fx-background-color: rgb(204, 214, 221);
+    -fx-text-fill: rgb(20, 20, 20);
+}
+
+.table-view:focused .table-row-cell:selected .label {
+    -fx-text-fill: rgb(0, 0, 0); /* Ensures text labels in selected cells are styled */
+}
+.table-view:focused .table-row-cell:selected .cell {
+    -fx-text-fill: rgb(0, 0, 0); /* Ensures text in the selected cells is styled */
+}
+#userMessage{
+    -fx-alignment: center;
+    -fx-text-fill: Red;
+}
+#nameField{
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+#passField{
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+ /* Apply rounded corners */
+
+
+#RPane{
+    -fx-background-color: rgba(247, 247, 247, 0.88);
+}
+
+
+/*      Menu CSS      */
+#CoursesBt{
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-background-color: rgb(171, 226, 245);
+    -fx-border-color: Blue;
+
+}
+
+#LabelC{
+    -fx-alignment: center;
+    -fx-text-fill: rgb(158, 158, 158);
+}
+#LabelD{
+    -fx-alignment: center;
+    -fx-text-fill: rgb(158, 158, 158);
+}
+#LabelG{
+    -fx-alignment: center;
+    -fx-text-fill: rgb(158, 158, 158);
+}
+#LabelE{
+    -fx-alignment: center;
+    -fx-text-fill: rgb(158, 158, 158);
+}
+#cname {
+    -fx-text-fill: rgb(91, 91, 194);
+}
+#root1{
+    -fx-background-color: rgba(247, 247, 247, 0.88);
+}
+
+#Vbox{
+    -fx-background-color: rgba(255, 255, 255, 0.88);
+}
+
+/* Styling ComboBox */
+.group{
+    -fx-font-size: 14px;            /* Set font size */
+    -fx-border-width: 1px;         /* Border width */
+    -fx-border-radius: 14px;
+    
+}
+
+/* Styling the dropdown arrow */
+#group .arrow {
+    -fx-background-color: #58665c; /* color for the dropdown arrow */
+}
+
+/* Style when ComboBox is focused */
+#group:focused {
+    -fx-border-color: #007acc;     /* border when focused */
+    -fx-background-color: #7bb8f9; /* background when focused */
+}
+
+/* Styling the drop-down menu */
+#group .list-view {
+    -fx-background-color: #ffffffb1;  /* background for the drop-down list */
+    -fx-border-color: #007acc;      /* border for the list */
+    -fx-font-size: 13px;             /* Font size in the drop-down */
+}
+#group .list-cell:filled:selected {
+    -fx-background-color: #ffffffb1;  /* background when an item is selected */
+
+}
+.radio-button {
+    -fx-mark-color: lightblue; /* Change the color of the selected marker */
+    -fx-background-color: #ffffff; /* Background color of the radio button */
+    -fx-border-color: rgb(59, 56, 158); /* Border color of the radio button */
+    -fx-border-width: 2; /* Border thickness */
+    -fx-border-radius: 15; /* Rounds the border */
+    -fx-padding: 5; /* Padding around the radio button */
+}
+
+.radio-button:hover {
+    -fx-border-color: #2980b9; /* Change border color on hover */
+}
+
+.radio-button:selected {
+    -fx-mark-color: lightblue; /* Change the color of the selected marker */
+}
+.choice-box {
+    -fx-background-color: #ffffff; /* Background color */
+    -fx-border-color: rgb(59, 56, 158); /* Border color */
+    -fx-border-radius: 5; /* Rounded corners */
+    -fx-padding: 5; /* Padding inside the box */
+    -fx-font-size: 14px; /* Font size */
+    -fx-text-fill: #2c3e50; /* Text color */
+}
+
+.choice-box:hover {
+    -fx-border-color: #2980b9; /* Border color on hover */
+}
+
+.choice-box .arrow {
+    -fx-background-color: lightblue; /* Color of the arrow background */
+    -fx-padding: 3; /* Padding around the arrow */
+    -fx-shape: "M 0 0 L 5 5 L 10 0 Z"; /* Custom arrow shape */
+}
+
+.list-cell {
+    -fx-background-color: #ecf0f1; /* Background color for the dropdown list */
+    -fx-text-fill: #2c3e50; /* Text color for the dropdown list */
+    -fx-padding: 5; /* Padding inside the list cells */
+}
+
+.list-cell:hover {
+    -fx-background-color: #3498db; /* Background color on hover */
+    -fx-text-fill: #ffffff; /* Text color on hover */
+}
+
+
