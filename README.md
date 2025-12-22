@@ -6,7 +6,8 @@ The **Smart Attendance System** is a robust, automated solution designed to revo
 ## ✨ Key Features
 * **💳 NFC-Based Registration:** Students simply tap their NFC-enabled cards to register attendance instantly.
 * **⚡ Real-Time Data Processing:** Provides immediate feedback upon card tap and updates records in a centralized database.
-* **👥 Multi-Role Access:** * **🔐 Administrators:** Manage users, courses, lectures, and groups.
+* **👥 Multi-Role Access:** *
+    * **🔐 Administrators:** Manage users, courses, lectures, and groups.
     * **👨‍🏫 Instructors:** Track, view, and manually adjust attendance if needed.
     * **🎓 Students:** Monitor their own attendance history and receive warnings.
 * **🛡️ Data Integrity & Security:** Secure centralized storage for all attendance records and student information.
