@@ -35,5 +35,12 @@ The system follows an object-oriented structure including:
 * **📱 Smart Device Support:** Using NFC-enabled smartphones instead of physical cards.
 * **🧬 Biometric Integration:** Adding methods like fingerprints or facial recognition.
 
+## 🎨 UI Design
+
+Here are some screenshots of the system interface:
+
+| 🏠 Home Screen | 🔑 Login Screen | 👤 Profile Screen |
+| :---: | :---: | :---: |
+| ![Home](screenshots/Home_doctor.png) | ![Login](screenshots/Login.png) | ![Profile](screenshots/Profile.png) |
 ---
 ⭐ Developed as part of the Computer Science Graduation Project at **Umm Al-Qura University** (First Class Honors).
