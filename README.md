@@ -39,10 +39,6 @@ The system follows an object-oriented structure including:
 
 Here are some screenshots of the system interface:
 
-### 📱 Core Interfaces
-| 🏠 Home Screen | 🔑 Login Screen | 👤 Profile Screen |
-| :---: | :---: | :---: |
-| ![Home](screenshots/Home_doctor.png) | ![Login](screenshots/Login.png) | ![Profile](screenshots/Profile.png) |
 
 ### 📡 NFC Attendance Process (Live)
 | ⏳ Waiting for Scan | ✅ Successful Scan | ⚠️ Already Attended |
