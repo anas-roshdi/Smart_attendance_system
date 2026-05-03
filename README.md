@@ -6,7 +6,7 @@ The **Smart Attendance System** is a robust, automated solution designed to revo
 ## ✨ Key Features
 * **💳 NFC-Based Registration:** Students simply tap their NFC-enabled cards to register attendance instantly.
 * **⚡ Real-Time Data Processing:** Provides immediate feedback upon card tap and updates records in a centralized database.
-* **👥 Multi-Role Access:** *
+* **👥 Multi-Role Access:** 
     * **🔐 Administrators:** Manage users, courses, lectures, and groups.
     * **👨‍🏫 Instructors:** Track, view, and manually adjust attendance if needed.
     * **🎓 Students:** Monitor their own attendance history and receive warnings.
@@ -39,8 +39,20 @@ The system follows an object-oriented structure including:
 
 Here are some screenshots of the system interface:
 
+### 📱 Core Interfaces
 | 🏠 Home Screen | 🔑 Login Screen | 👤 Profile Screen |
 | :---: | :---: | :---: |
 | ![Home](screenshots/Home_doctor.png) | ![Login](screenshots/Login.png) | ![Profile](screenshots/Profile.png) |
+
+### 📡 NFC Attendance Process (Live)
+| ⏳ Waiting for Scan | ✅ Successful Scan | ⚠️ Already Attended |
+| :---: | :---: | :---: |
+| ![NFC Wait](screenshots/2.jpg) | ![NFC Success](screenshots/4.jpg) | ![NFC Warning](screenshots/3.jpg) |
+
+### 🛠️ System Administration & Validation
+| ➕ Add New Course | ✏️ Edit Student Data | 🔐 Login Validation |
+| :---: | :---: | :---: |
+| ![Add Course](screenshots/6.jpg) | ![Edit Student](screenshots/5.jpg) | ![Login Error](screenshots/1.jpg) |
+
 ---
 ⭐ Developed as part of the Computer Science Graduation Project at **Umm Al-Qura University** (First Class Honors).
